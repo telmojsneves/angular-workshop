@@ -12,7 +12,7 @@
     <div class="subtext-laptop">
       {{item.score}} points by
       <a href="https://news.ycombinator.com/user?id={{item.by}}">{{item.by}}</a>
-      {{ item.time * 1000 | date:'dd-MM-yyyy' }}
+      {{ item.time }}
         <span *ngIf="item.descendants !== 0">
           {{item.descendants}}
           <span *ngIf="item.descendants === 1">comment</span>

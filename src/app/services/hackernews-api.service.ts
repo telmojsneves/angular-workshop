@@ -22,13 +22,8 @@ export class HackerNewsApiService {
   constructor(private http: Http) { }
 
 
-  getNewsList() : Observable<any> {
+  /*get News list from hckernews /beststories.json*/
 
-    return this.http.get(this.hckrnewsUrl + '/beststories.json')
-      .map(this.extractData);
-
-
-  }
 
   getItem(item_id : number) : Observable<any> {
 

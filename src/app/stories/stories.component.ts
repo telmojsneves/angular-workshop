@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
-/*import hackernewsService*/
+/*import hackernewsService here*/
 import {HackerNewsApiService} from '../services/hackernews-api.service';
 
 
@@ -14,16 +14,13 @@ export class StoriesComponent implements OnInit {
 
   items;
 
-  constructor( private _hckrnewsAPIService: HackerNewsApiService) {
+  constructor( /*add service here*/) {
 
   }
 
   ngOnInit() {
-    this._hckrnewsAPIService.getNewsList()
-    .subscribe(
-      items => this.items = items,
-      error => console.log("No stories catched"),
-    )
+    /* get news here from service*/
+    
 
 
 
