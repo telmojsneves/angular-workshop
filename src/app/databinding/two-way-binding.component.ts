@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
     selector: 'fa-two-way-binding',
     template: `
     <input type="text" [(ngModel)]="person.name">
-    <input type="text" [(ngModel)]="person.name">
   `
 })
 export class TwoWayBindingComponent {
